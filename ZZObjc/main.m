@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         person.name = @"zeze";
         person.nickName = @"zezefamily";
         person.hobby = 10086;
-        NSLog(@"Hello, World!");
+        NSLog(@"zezefamily");
     }
     return 0;
 }
