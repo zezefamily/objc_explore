@@ -10,6 +10,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
+        //alloc->_objc_rootAlloc->callAlloc->_objc_rootAllocWithZone->_class_createInstanceFromZone
         ZZPerson *person = [ZZPerson alloc];
         person.name = @"zeze";
         person.nickName = @"zezefamily";
