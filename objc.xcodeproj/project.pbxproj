@@ -284,6 +284,7 @@
 		FF714C8E2505E031002524FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF714C962505E209002524FA /* ZZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPerson.h; sourceTree = "<group>"; };
 		FF714C972505E209002524FA /* ZZPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPerson.m; sourceTree = "<group>"; };
+		FF714CA7250881EE002524FA /* isa流程图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa流程图.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +316,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				FF714CA6250881DC002524FA /* Resource */,
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
 				838485C60D6D687700CEA253 /* Public Headers */,
 				838485C70D6D688200CEA253 /* Private Headers */,
@@ -508,6 +510,14 @@
 				FF714C972505E209002524FA /* ZZPerson.m */,
 			);
 			path = ZZObjc;
+			sourceTree = "<group>";
+		};
+		FF714CA6250881DC002524FA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FF714CA7250881EE002524FA /* isa流程图.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

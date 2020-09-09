@@ -7521,6 +7521,7 @@ _class_createInstanceFromZone(Class cls, size_t extraBytes, void *zone,
 
     // Read class's info bits all at once for performance
     bool hasCxxCtor = cxxConstruct && cls->hasCxxCtor();
+    //
     bool hasCxxDtor = cls->hasCxxDtor();
     bool fast = cls->canAllocNonpointer();
     size_t size;
