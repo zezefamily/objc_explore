@@ -5,8 +5,6 @@
 //  Created by 泽泽 on 2020/9/7.
 //
 /// 字节对齐
-
-
 struct Test {
     int a;    //4  0 1 2 3
     float b;  //4  4 5 6 7
@@ -36,7 +34,6 @@ int main(int argc, const char * argv[]) {
         
         
     }
-    
     return 0;
 }
 
@@ -80,7 +77,6 @@ void toDoTest0() {
     printf("data1.value = %d\r\n",data1.value);
     printf("data2.value = %d\r\n",data2.value);
 }
-
 
 /*
  

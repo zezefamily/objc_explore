@@ -285,6 +285,7 @@
 		FF714C962505E209002524FA /* ZZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPerson.h; sourceTree = "<group>"; };
 		FF714C972505E209002524FA /* ZZPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPerson.m; sourceTree = "<group>"; };
 		FF714CA7250881EE002524FA /* isa流程图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa流程图.png"; sourceTree = "<group>"; };
+		FF714CEF250A11F4002524FA /* isa64情况.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa64情况.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +516,7 @@
 		FF714CA6250881DC002524FA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FF714CEF250A11F4002524FA /* isa64情况.png */,
 				FF714CA7250881EE002524FA /* isa流程图.png */,
 			);
 			path = Resource;
