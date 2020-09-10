@@ -232,7 +232,7 @@ objc_object::initIsa(Class cls, bool nonpointer, bool hasCxxDtor)
         ASSERT(!cls->instancesRequireRawIsa());
 
         isa_t newisa(0);
-
+        
 #if SUPPORT_INDEXED_ISA
         ASSERT(cls->classArrayIndex() > 0);
         newisa.bits = ISA_INDEX_MAGIC_VALUE;

@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSString *nickName; // zezefamily 8
 @property (nonatomic) int hobby; // 10000 4
 
+- (void)tenToTwo:(int)num;
+- (void)twoToTen:(NSString *)num;
 @end
 
 NS_ASSUME_NONNULL_END
