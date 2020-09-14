@@ -131,7 +131,12 @@
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		F9BCC71B205C68E800DD9AFC /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8379996D13CBAF6F007C2B5F /* objc-blocktramps-arm64.s */; };
-		FF9E87B3250F6D8000742793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9E87B2250F6D8000742793 /* main.m */; };
+		FF9E87C0250F6F2E00742793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9E87BF250F6F2E00742793 /* main.m */; };
+		FF9E87C4250F6F4400742793 /* ZZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FF714C972505E209002524FA /* ZZPerson.m */; };
+		FF9E87C5250F6F4400742793 /* ZZStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F0B21250F459300D2A37A /* ZZStudent.m */; };
+		FF9E87C8250F6F5B00742793 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
+		FF9E87D0250F703500742793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9E87CF250F703500742793 /* main.m */; };
+		FF9E87D6250F704800742793 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,10 +154,33 @@
 			remoteGlobalIDString = F9BCC6CA205C68E800DD9AFC;
 			remoteInfo = "objc-trampolines";
 		};
+		FF9E87C6250F6F5600742793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = objc;
+		};
+		FF9E87D4250F704200742793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = objc;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FF9E87AE250F6D8000742793 /* CopyFiles */ = {
+		FF9E87BB250F6F2E00742793 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FF9E87CB250F703500742793 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -273,14 +301,17 @@
 		F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libobjc-trampolines.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1F0B20250F459300D2A37A /* ZZStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZStudent.h; sourceTree = "<group>"; };
 		FF1F0B21250F459300D2A37A /* ZZStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZStudent.m; sourceTree = "<group>"; };
-		FF714C8E2505E031002524FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF714C962505E209002524FA /* ZZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPerson.h; sourceTree = "<group>"; };
 		FF714C972505E209002524FA /* ZZPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPerson.m; sourceTree = "<group>"; };
 		FF714CA7250881EE002524FA /* isa流程图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa流程图.png"; sourceTree = "<group>"; };
 		FF714CEF250A11F4002524FA /* isa64情况.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa64情况.png"; sourceTree = "<group>"; };
 		FF714CF0250A1B6F002524FA /* remark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = remark.h; sourceTree = "<group>"; };
-		FF9E87B0250F6D8000742793 /* ZZObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ZZObjc; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF9E87B2250F6D8000742793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF9E87BD250F6F2E00742793 /* ZZObject1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ZZObject1; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9E87BF250F6F2E00742793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF9E87CD250F703500742793 /* ZZTest1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ZZTest1; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9E87CF250F703500742793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF9E87F1250F7BE400742793 /* LLDB_LOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LLDB_LOG.md; sourceTree = "<group>"; };
+		FF9E87F2250F7C0A00742793 /* 截屏2020-09-14 下午2.06.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "截屏2020-09-14 下午2.06.58.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,10 +329,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF9E87AD250F6D8000742793 /* Frameworks */ = {
+		FF9E87BA250F6F2E00742793 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9E87C8250F6F5B00742793 /* libobjc.A.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9E87CA250F703500742793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9E87D6250F704800742793 /* libobjc.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +351,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				FF9E87F1250F7BE400742793 /* LLDB_LOG.md */,
 				FF714CA6250881DC002524FA /* Resource */,
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
 				838485C60D6D687700CEA253 /* Public Headers */,
@@ -320,8 +361,8 @@
 				838486270D6D690F00CEA253 /* Obsolete Source */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				838485B20D6D67F900CEA253 /* Other */,
-				FF714C8D2505E031002524FA /* ZZObjc */,
-				FF9E87B1250F6D8000742793 /* ZZObjc */,
+				FF9E87BE250F6F2E00742793 /* ZZObject1 */,
+				FF9E87CE250F703500742793 /* ZZTest1 */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				F9BCC72A205C6A1600DD9AFC /* Frameworks */,
 			);
@@ -385,7 +426,8 @@
 			children = (
 				D2AAC0630554660B00DB518D /* libobjc.A.dylib */,
 				F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */,
-				FF9E87B0250F6D8000742793 /* ZZObjc */,
+				FF9E87BD250F6F2E00742793 /* ZZObject1 */,
+				FF9E87CD250F703500742793 /* ZZTest1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -498,21 +540,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FF714C8D2505E031002524FA /* ZZObjc */ = {
-			isa = PBXGroup;
-			children = (
-				FF714C8E2505E031002524FA /* main.m */,
-				FF1F0B20250F459300D2A37A /* ZZStudent.h */,
-				FF1F0B21250F459300D2A37A /* ZZStudent.m */,
-				FF714C962505E209002524FA /* ZZPerson.h */,
-				FF714C972505E209002524FA /* ZZPerson.m */,
-			);
-			path = ZZObjc;
-			sourceTree = "<group>";
-		};
 		FF714CA6250881DC002524FA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FF9E87F2250F7C0A00742793 /* 截屏2020-09-14 下午2.06.58.png */,
 				FF714CEF250A11F4002524FA /* isa64情况.png */,
 				FF714CA7250881EE002524FA /* isa流程图.png */,
 				FF714CF0250A1B6F002524FA /* remark.h */,
@@ -520,12 +551,24 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		FF9E87B1250F6D8000742793 /* ZZObjc */ = {
+		FF9E87BE250F6F2E00742793 /* ZZObject1 */ = {
 			isa = PBXGroup;
 			children = (
-				FF9E87B2250F6D8000742793 /* main.m */,
+				FF1F0B20250F459300D2A37A /* ZZStudent.h */,
+				FF1F0B21250F459300D2A37A /* ZZStudent.m */,
+				FF714C962505E209002524FA /* ZZPerson.h */,
+				FF714C972505E209002524FA /* ZZPerson.m */,
+				FF9E87BF250F6F2E00742793 /* main.m */,
 			);
-			path = ZZObjc;
+			path = ZZObject1;
+			sourceTree = "<group>";
+		};
+		FF9E87CE250F703500742793 /* ZZTest1 */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E87CF250F703500742793 /* main.m */,
+			);
+			path = ZZTest1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,21 +680,40 @@
 			productReference = F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
-		FF9E87AF250F6D8000742793 /* ZZObjc */ = {
+		FF9E87BC250F6F2E00742793 /* ZZObject1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF9E87B4250F6D8000742793 /* Build configuration list for PBXNativeTarget "ZZObjc" */;
+			buildConfigurationList = FF9E87C1250F6F2E00742793 /* Build configuration list for PBXNativeTarget "ZZObject1" */;
 			buildPhases = (
-				FF9E87AC250F6D8000742793 /* Sources */,
-				FF9E87AD250F6D8000742793 /* Frameworks */,
-				FF9E87AE250F6D8000742793 /* CopyFiles */,
+				FF9E87B9250F6F2E00742793 /* Sources */,
+				FF9E87BA250F6F2E00742793 /* Frameworks */,
+				FF9E87BB250F6F2E00742793 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF9E87C7250F6F5600742793 /* PBXTargetDependency */,
 			);
-			name = ZZObjc;
-			productName = ZZObjc;
-			productReference = FF9E87B0250F6D8000742793 /* ZZObjc */;
+			name = ZZObject1;
+			productName = ZZObject1;
+			productReference = FF9E87BD250F6F2E00742793 /* ZZObject1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		FF9E87CC250F703500742793 /* ZZTest1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9E87D1250F703500742793 /* Build configuration list for PBXNativeTarget "ZZTest1" */;
+			buildPhases = (
+				FF9E87C9250F703500742793 /* Sources */,
+				FF9E87CA250F703500742793 /* Frameworks */,
+				FF9E87CB250F703500742793 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF9E87D5250F704200742793 /* PBXTargetDependency */,
+			);
+			name = ZZTest1;
+			productName = ZZTest1;
+			productReference = FF9E87CD250F703500742793 /* ZZTest1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -670,8 +732,13 @@
 					837F67A81A771F63004D34FA = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					FF9E87AF250F6D8000742793 = {
+					FF9E87BC250F6F2E00742793 = {
 						CreatedOnToolsVersion = 11.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					FF9E87CC250F703500742793 = {
+						CreatedOnToolsVersion = 11.4.1;
+						DevelopmentTeam = BKB2W89RHK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -695,7 +762,8 @@
 				837F67A81A771F63004D34FA /* objc-simulator */,
 				F9BCC6CA205C68E800DD9AFC /* objc-trampolines */,
 				834F9B01212E560100F95A54 /* objc4_tests */,
-				FF9E87AF250F6D8000742793 /* ZZObjc */,
+				FF9E87BC250F6F2E00742793 /* ZZObject1 */,
+				FF9E87CC250F703500742793 /* ZZTest1 */,
 			);
 		};
 /* End PBXProject section */
@@ -812,11 +880,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF9E87AC250F6D8000742793 /* Sources */ = {
+		FF9E87B9250F6F2E00742793 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9E87B3250F6D8000742793 /* main.m in Sources */,
+				FF9E87C5250F6F4400742793 /* ZZStudent.m in Sources */,
+				FF9E87C4250F6F4400742793 /* ZZPerson.m in Sources */,
+				FF9E87C0250F6F2E00742793 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9E87C9250F703500742793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9E87D0250F703500742793 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +910,16 @@
 			isa = PBXTargetDependency;
 			target = F9BCC6CA205C68E800DD9AFC /* objc-trampolines */;
 			targetProxy = F9BCC728205C6A0900DD9AFC /* PBXContainerItemProxy */;
+		};
+		FF9E87C7250F6F5600742793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0620554660B00DB518D /* objc */;
+			targetProxy = FF9E87C6250F6F5600742793 /* PBXContainerItemProxy */;
+		};
+		FF9E87D5250F704200742793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0620554660B00DB518D /* objc */;
+			targetProxy = FF9E87D4250F704200742793 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1201,7 +1289,7 @@
 			};
 			name = Release;
 		};
-		FF9E87B5250F6D8000742793 /* Debug */ = {
+		FF9E87C2250F6F2E00742793 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1254,7 +1342,7 @@
 			};
 			name = Debug;
 		};
-		FF9E87B6250F6D8000742793 /* Release */ = {
+		FF9E87C3250F6F2E00742793 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1286,6 +1374,108 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF9E87D2250F703500742793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = BKB2W89RHK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF9E87D3250F703500742793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = BKB2W89RHK;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1349,11 +1539,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF9E87B4250F6D8000742793 /* Build configuration list for PBXNativeTarget "ZZObjc" */ = {
+		FF9E87C1250F6F2E00742793 /* Build configuration list for PBXNativeTarget "ZZObject1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF9E87B5250F6D8000742793 /* Debug */,
-				FF9E87B6250F6D8000742793 /* Release */,
+				FF9E87C2250F6F2E00742793 /* Debug */,
+				FF9E87C3250F6F2E00742793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9E87D1250F703500742793 /* Build configuration list for PBXNativeTarget "ZZTest1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9E87D2250F703500742793 /* Debug */,
+				FF9E87D3250F703500742793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
