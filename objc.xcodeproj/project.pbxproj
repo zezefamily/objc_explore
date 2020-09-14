@@ -131,9 +131,7 @@
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		F9BCC71B205C68E800DD9AFC /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8379996D13CBAF6F007C2B5F /* objc-blocktramps-arm64.s */; };
-		FF714C8F2505E031002524FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF714C8E2505E031002524FA /* main.m */; };
-		FF714C952505E1A7002524FA /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
-		FF714C982505E209002524FA /* ZZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FF714C972505E209002524FA /* ZZPerson.m */; };
+		FF9E87B3250F6D8000742793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9E87B2250F6D8000742793 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,17 +149,10 @@
 			remoteGlobalIDString = F9BCC6CA205C68E800DD9AFC;
 			remoteInfo = "objc-trampolines";
 		};
-		FF714C932505E19E002524FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC0620554660B00DB518D;
-			remoteInfo = objc;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FF714C8A2505E031002524FA /* CopyFiles */ = {
+		FF9E87AE250F6D8000742793 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -280,13 +271,16 @@
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
 		F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libobjc-trampolines.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF714C8C2505E031002524FA /* ZZObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ZZObjc; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1F0B20250F459300D2A37A /* ZZStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZStudent.h; sourceTree = "<group>"; };
+		FF1F0B21250F459300D2A37A /* ZZStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZStudent.m; sourceTree = "<group>"; };
 		FF714C8E2505E031002524FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF714C962505E209002524FA /* ZZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPerson.h; sourceTree = "<group>"; };
 		FF714C972505E209002524FA /* ZZPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPerson.m; sourceTree = "<group>"; };
 		FF714CA7250881EE002524FA /* isa流程图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa流程图.png"; sourceTree = "<group>"; };
 		FF714CEF250A11F4002524FA /* isa64情况.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa64情况.png"; sourceTree = "<group>"; };
 		FF714CF0250A1B6F002524FA /* remark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = remark.h; sourceTree = "<group>"; };
+		FF9E87B0250F6D8000742793 /* ZZObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ZZObjc; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9E87B2250F6D8000742793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,11 +298,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF714C892505E031002524FA /* Frameworks */ = {
+		FF9E87AD250F6D8000742793 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF714C952505E1A7002524FA /* libobjc.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +321,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				838485B20D6D67F900CEA253 /* Other */,
 				FF714C8D2505E031002524FA /* ZZObjc */,
+				FF9E87B1250F6D8000742793 /* ZZObjc */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				F9BCC72A205C6A1600DD9AFC /* Frameworks */,
 			);
@@ -391,7 +385,7 @@
 			children = (
 				D2AAC0630554660B00DB518D /* libobjc.A.dylib */,
 				F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */,
-				FF714C8C2505E031002524FA /* ZZObjc */,
+				FF9E87B0250F6D8000742793 /* ZZObjc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -508,6 +502,8 @@
 			isa = PBXGroup;
 			children = (
 				FF714C8E2505E031002524FA /* main.m */,
+				FF1F0B20250F459300D2A37A /* ZZStudent.h */,
+				FF1F0B21250F459300D2A37A /* ZZStudent.m */,
 				FF714C962505E209002524FA /* ZZPerson.h */,
 				FF714C972505E209002524FA /* ZZPerson.m */,
 			);
@@ -522,6 +518,14 @@
 				FF714CF0250A1B6F002524FA /* remark.h */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		FF9E87B1250F6D8000742793 /* ZZObjc */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E87B2250F6D8000742793 /* main.m */,
+			);
+			path = ZZObjc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,22 +637,21 @@
 			productReference = F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
-		FF714C8B2505E031002524FA /* ZZObjc */ = {
+		FF9E87AF250F6D8000742793 /* ZZObjc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF714C902505E031002524FA /* Build configuration list for PBXNativeTarget "ZZObjc" */;
+			buildConfigurationList = FF9E87B4250F6D8000742793 /* Build configuration list for PBXNativeTarget "ZZObjc" */;
 			buildPhases = (
-				FF714C882505E031002524FA /* Sources */,
-				FF714C892505E031002524FA /* Frameworks */,
-				FF714C8A2505E031002524FA /* CopyFiles */,
+				FF9E87AC250F6D8000742793 /* Sources */,
+				FF9E87AD250F6D8000742793 /* Frameworks */,
+				FF9E87AE250F6D8000742793 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF714C942505E19E002524FA /* PBXTargetDependency */,
 			);
 			name = ZZObjc;
 			productName = ZZObjc;
-			productReference = FF714C8C2505E031002524FA /* ZZObjc */;
+			productReference = FF9E87B0250F6D8000742793 /* ZZObjc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -667,9 +670,8 @@
 					837F67A81A771F63004D34FA = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					FF714C8B2505E031002524FA = {
+					FF9E87AF250F6D8000742793 = {
 						CreatedOnToolsVersion = 11.4.1;
-						DevelopmentTeam = BKB2W89RHK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -693,7 +695,7 @@
 				837F67A81A771F63004D34FA /* objc-simulator */,
 				F9BCC6CA205C68E800DD9AFC /* objc-trampolines */,
 				834F9B01212E560100F95A54 /* objc4_tests */,
-				FF714C8B2505E031002524FA /* ZZObjc */,
+				FF9E87AF250F6D8000742793 /* ZZObjc */,
 			);
 		};
 /* End PBXProject section */
@@ -810,12 +812,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF714C882505E031002524FA /* Sources */ = {
+		FF9E87AC250F6D8000742793 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF714C8F2505E031002524FA /* main.m in Sources */,
-				FF714C982505E209002524FA /* ZZPerson.m in Sources */,
+				FF9E87B3250F6D8000742793 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,11 +832,6 @@
 			isa = PBXTargetDependency;
 			target = F9BCC6CA205C68E800DD9AFC /* objc-trampolines */;
 			targetProxy = F9BCC728205C6A0900DD9AFC /* PBXContainerItemProxy */;
-		};
-		FF714C942505E19E002524FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC0620554660B00DB518D /* objc */;
-			targetProxy = FF714C932505E19E002524FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1205,7 +1201,7 @@
 			};
 			name = Release;
 		};
-		FF714C912505E031002524FA /* Debug */ = {
+		FF9E87B5250F6D8000742793 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1235,10 +1231,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = BKB2W89RHK;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1256,12 +1250,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ios.zzobjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FF714C922505E031002524FA /* Release */ = {
+		FF9E87B6250F6D8000742793 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1291,15 +1284,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = BKB2W89RHK;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1307,7 +1297,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ios.zzobjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1360,11 +1349,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF714C902505E031002524FA /* Build configuration list for PBXNativeTarget "ZZObjc" */ = {
+		FF9E87B4250F6D8000742793 /* Build configuration list for PBXNativeTarget "ZZObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF714C912505E031002524FA /* Debug */,
-				FF714C922505E031002524FA /* Release */,
+				FF9E87B5250F6D8000742793 /* Debug */,
+				FF9E87B6250F6D8000742793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

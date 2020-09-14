@@ -266,8 +266,8 @@ public:
 
 struct cache_t {
 #if CACHE_MASK_STORAGE == CACHE_MASK_STORAGE_OUTLINED
-    explicit_atomic<struct bucket_t *> _buckets;
-    explicit_atomic<mask_t> _mask;
+    explicit_atomic<struct bucket_t *> _buckets;  // 8 (struct bucket_t *)
+    explicit_atomic<mask_t> _mask;  //  4  (mask_t = uint32_t)
 #elif CACHE_MASK_STORAGE == CACHE_MASK_STORAGE_HIGH_16
     explicit_atomic<uintptr_t> _maskAndBuckets;
     mask_t _mask_unused;
@@ -304,9 +304,9 @@ struct cache_t {
 #endif
     
 #if __LP64__
-    uint16_t _flags;
+    uint16_t _flags;       // 2
 #endif
-    uint16_t _occupied;
+    uint16_t _occupied;    // 2
 
 public:
     static bucket_t *emptyBuckets();
@@ -1242,9 +1242,10 @@ public:
 
 
 struct objc_class : objc_object {
-    // Class ISA;
-    Class superclass;
-    cache_t cache;             // formerly cache pointer and vtable
+    // Class ISA;        // 8
+    Class superclass;    // 8
+    cache_t cache;             // formerly cache pointer and vtable // 8 + 4 + 2 + 2
+                               // offset = 32
     class_data_bits_t bits;    // class_rw_t * plus custom rr/alloc flags
 
     class_rw_t *data() const {
