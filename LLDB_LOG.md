@@ -71,4 +71,61 @@ The process has been returned to the state before expression evaluation.
 ```
 [图片]()
 
+```
+(lldb) p/x ZZPerson.class
+(Class) $0 = 0x0000000100002230 ZZPerson
+(lldb) p (cache_t *)0x0000000100002240
+(cache_t *) $1 = 0x0000000100002240
+(lldb) p *$1
+(cache_t) $2 = {
+  _buckets = {
+    std::__1::atomic<bucket_t *> = 0x0000000100719980 {
+      _sel = {
+        std::__1::atomic<objc_selector *> = ""
+      }
+      _imp = {
+        std::__1::atomic<unsigned long> = 11504
+      }
+    }
+  }
+  _mask = {
+    std::__1::atomic<unsigned int> = 3
+  }
+  _flags = 32784
+  _occupied = 2
+}
+(lldb) p $2.buckets()
+(bucket_t *) $3 = 0x0000000100719980
+(lldb) p *$3
+(bucket_t) $4 = {
+  _sel = {
+    std::__1::atomic<objc_selector *> = ""
+  }
+  _imp = {
+    std::__1::atomic<unsigned long> = 11504
+  }
+}
+(lldb) p $4.sel()
+(SEL) $5 = "toDoSomething0"
+(lldb) p $4.imp(pClass)
+(IMP) $6 = 0x0000000100000ec0 (KCObjc`-[ZZPerson toDoSomething0])
+(lldb) p $3 + 1
+(bucket_t *) $7 = 0x0000000100719990
+(lldb) p *$7
+(bucket_t) $8 = {
+  _sel = {
+    std::__1::atomic<objc_selector *> = ""
+  }
+  _imp = {
+    std::__1::atomic<unsigned long> = 11472
+  }
+}
+(lldb) p $8.sel()
+(SEL) $9 = "toDoSayHello"
+(lldb) p $8.imp(pClass)
+(IMP) $10 = 0x0000000100000ee0 (KCObjc`-[ZZPerson toDoSayHello])
+(lldb) 
+
+```
+
 
